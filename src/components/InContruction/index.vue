@@ -5,7 +5,9 @@
         </div>
 
         <div class="content">
-            <img src="@/assets/img/stars.png" class="stars" />
+            <div class="stars">
+                <img src="@/assets/img/stars.png" />
+            </div>
             <img src="@/assets/img/planet_1.png" class="planet-1" />
             <img src="@/assets/img/planet_2.png" class="planet-2" />
 
