@@ -4,6 +4,7 @@
     background-color: #0D0048;
     height: 100vh;
     width: 100vw;
+    margin-top: 0px;
 
     &::-webkit-scrollbar
         display: none;
@@ -26,7 +27,10 @@
     .logo
         position: absolute;
         top: 83px;
-        left: 55px;
+        left: 27px;
+
+        @media screen and (min-width: 576px)
+            left: 55px;
 
     .content
         font-family: "Ruda", sans-serif;
@@ -34,6 +38,7 @@
         position: relative;
         z-index: 1;
         color: #E3DFF9;
+        margin-top: 289px;
 
         img
             position: absolute;
@@ -41,21 +46,44 @@
 
         .stars
             top: -29px;
-            left: 342px;
+
+            @media screen and (min-width: 576px)
+                margin-left: 50px;
+
+            @media screen and (min-width: 768px)
+                left: 141px;
+            
+            @media screen and (min-width: 1024px)
+                left: 272px;
+            
+            @media screen and (min-width: 1200px)
+                left: 342px;
         
         .planet-1
-            top: -120px;
-            right: 178px;
+            top: -100px;
+            right: 40px;
+            width: 45px;
+
+            @media screen and (min-width: 768px)
+                top: -120px;
+                right: 178px;
+                width: auto;
         
         .planet-2
             top: 90px;
-            right: 202px;
+            right: 55px;
+            width: 20px;
+
+            @media screen and (min-width: 768px)
+                top: 90px;
+                right: 202px;
+                width: auto;
 
         .title
             display: flex;
             justify-content: center
-            margin-top: 289px;
             margin-bottom: 60px;
+            text-align: center;
 
             .label
                 font-size: 40px;
@@ -201,24 +229,31 @@
                     width: 327px;
 
     .footer
+        position: absolute;
         display: flex;
         font-family: "Bebas neue", sans-serif;
-        justify-content: space-between;
+        justify-content: flex-end;
         width: 100%;
+        bottom: 0px;
+        flex-direction: column;
 
-        @media (max-width: 635px)
-            flex-direction: column;
+        @media (min-width: 576px)
+            flex-direction: row;
 
         .social-media
-            margin: auto 124px 48px auto;
+            margin: auto 102px 48px auto;
 
             a
                 margin-right: 22px;
 
                 &:last-child
                     margin-right: 0px;
+            
+            @media (min-width: 576px)
+                margin-right: 122px;
 
         .wave
+            position: absolute;
             opacity: 0.2;
             bottom: 0px;
             left: 0px;
