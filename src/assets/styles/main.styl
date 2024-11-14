@@ -1,0 +1,19 @@
+@import './fonts.styl';
+@import './colors.styl';
+
+#app
+    margin: -8px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "hd hd hd" "bd bd bd" "bd bd bd";
+    color: black_1;
+    background-color: #F6F6F6;
+    overflow: hidden;
+
+    @media screen and (max-width: 600px)
+        grid-template-areas: "nav hd hd" "nav bd bd" "nav bd bd";
+
+*, html
+    scroll-behavior: smooth !important;
