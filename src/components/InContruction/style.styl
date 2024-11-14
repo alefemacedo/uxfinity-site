@@ -1,0 +1,224 @@
+.body
+    overflow: hidden auto;
+    position: relative;
+    background-color: #0D0048;
+    height: 100vh;
+    width: 100vw;
+
+    &::-webkit-scrollbar
+        display: none;
+    
+    &:before
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('@/assets/img/fundo.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #0D0048;
+        background-blend-mode: multiply;
+        opacity: 0.6;
+        z-index: -1;
+    
+    .logo
+        position: absolute;
+        top: 83px;
+        left: 55px;
+
+    .content
+        font-family: "Ruda", sans-serif;
+        text-transform: none;
+        position: relative;
+        z-index: 1;
+        color: #E3DFF9;
+
+        img
+            position: absolute;
+            z-index: -1;
+
+        .stars
+            top: -29px;
+            left: 342px;
+        
+        .planet-1
+            top: -120px;
+            right: 178px;
+        
+        .planet-2
+            top: 90px;
+            right: 202px;
+
+        .title
+            display: flex;
+            justify-content: center
+            margin-top: 289px;
+            margin-bottom: 60px;
+
+            .label
+                font-size: 40px;
+                line-height: 38px;
+
+        .countdown
+            &-title
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 30px;
+
+            &-timer
+                display: flex;
+                justify-content: center;
+
+                .timer
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 265px;
+                    font-size: 26px;
+
+                    div
+                        display: flex;
+                        flex-direction: column;
+
+                        span
+                            text-align: center;
+        
+        .contact-form
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 28px;
+
+            .form-header
+                display: flex;
+                flex-direction: column;
+                max-width: 847px;
+
+                .title
+                    font-size: 52px;
+                    line-height: 78px;
+                    display: inline-flex;
+                    text-align: left;
+
+                .subtitle
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 20px;
+                    line-height: 30px;
+                    display: inline-flex;
+                    text-align: center;
+                    text-transform: none;
+
+            .form
+                display: flex;
+                flex-direction: column;
+                width: 563px;
+                gap: 28px;
+
+                label
+                    display: flex;
+                    flex-direction: column;
+                    font-weight: 500;
+                    font-size: 18px;
+                    text-transform: none;
+                
+                input, select, textarea
+                    font-family: 'Poppins', sans-serif;
+                    background-color: #F0F0F0;
+                    border: none;
+                    height: 46px;
+                    padding: 0px 26px;
+                    border-radius: 0px;
+                    margin-top: 15px;
+                    margin-bottom: 5px;
+                    
+                    ::placeholder
+                        color: #B2B2B2;
+                    
+                    &:focus
+                        outline: 1px solid #451841;
+                
+                textarea
+                    height: 165px;
+                    padding-top: 25px;
+                
+                option
+                    font-family: 'Poppins', sans-serif;
+                    background-color: #F0F0F0;
+                    border: none;
+                    height: 46px;
+                    padding: 0px 26px;
+                    border-radius: 0px;
+
+                button
+                    height: 72px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    font-family: "Poppins", sans-serif;
+                    color: #F3F3F3;
+                    font-size: 20px;
+                    line-height: 30px;
+                    font-weight: 500;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    background-color: #0095A9;
+                    border: none;
+
+                    &:disabled
+                        cursor: auto;
+                        background-color: #65979e;
+            
+                .error
+                    color: red;
+
+                    input, select, textarea
+                        border: 0.5px solid red;
+
+                    .input-errors .error-msg
+                        font-size: 12px;
+
+            @media screen and (max-width: 600px)
+                margin-top: 20px;
+                margin-bottom: 90px;
+
+                .form-header
+                    max-width: 326px;
+                    gap: 10px;
+
+                    .title
+                        font-size: 26px;
+                        line-height: 39px;
+                        text-align: center;
+
+                    .subtitle
+                        font-size: 16px;
+                        line-height: 24px;
+                
+                .form
+                    width: 327px;
+
+    .footer
+        display: flex;
+        font-family: "Bebas neue", sans-serif;
+        justify-content: space-between;
+        width: 100%;
+
+        @media (max-width: 635px)
+            flex-direction: column;
+
+        .social-media
+            margin: auto 124px 48px auto;
+
+            a
+                margin-right: 22px;
+
+                &:last-child
+                    margin-right: 0px;
+
+        .wave
+            opacity: 0.2;
+            bottom: 0px;
+            left: 0px;
