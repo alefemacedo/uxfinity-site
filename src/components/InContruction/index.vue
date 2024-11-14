@@ -36,7 +36,7 @@
                 </div>
             </div>
 
-            <div class="contact-form">
+            <!-- <div class="contact-form">
                 <div class="form-header">
                     <span class="title w500">
                         Chega de conversa, vamos construir algo juntos!
@@ -128,7 +128,7 @@
                     @clear="clearForm"
                     @update:show="showModal = $event"
                 />
-            </div>
+            </div> -->
         </div>
 
         <div class="footer">
