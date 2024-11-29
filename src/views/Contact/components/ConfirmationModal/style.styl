@@ -1,0 +1,212 @@
+.modal-mask
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  transition: opacity 0.3s ease;
+
+.confirmation-modal
+    width: 300px;
+    margin: auto;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+    transition: all 0.3s ease;
+
+    .modal-header
+        display: flex;
+        justify-content: space-between;
+
+        .title
+            text-transform: none;
+        
+        .close
+            cursor: pointer;
+
+    .modal-content
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 200px;
+
+        .sending, .sended
+            margin-top: 15px;
+            text-transform: none;
+
+            span
+                text-align: center;
+
+            .success
+                color: #5cb85c;
+            
+            .failed
+                color: #f86;
+
+        .error-mark, .circle-loader
+            margin-top: auto;
+            margin-bottom: auto;
+
+    .modal-footer
+        .modal-action-buttons
+            display: flex;
+            justify-content: center;
+
+            button
+                height: 50px;
+                width: 250px;
+                border-radius: 10px;
+                cursor: pointer;
+                font-family: "Poppins", sans-serif;
+                color: #F3F3F3;
+                font-size: 16px;
+                line-height: 22px;
+                font-weight: 500;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                background-color: #8F2D83;
+                border: none;
+                padding: 5px 10px;
+
+// Define vars we'll be using
+$brand-success = #5cb85c;
+$brand-failure = #bb4242;
+$loader-size = 4em;
+$check-height = $loader-size/2;
+$check-width = $check-height/2;
+$check-left = ($loader-size/6 + $loader-size/12);
+$check-thickness = 3px;
+$check-color = $brand-success;
+
+.circle-loader
+  margin-bottom: $loader-size/2;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-left-color: $check-color;
+  animation: loader-spin 1.2s infinite linear;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 50%;
+  width: $loader-size;
+  height: $loader-size;
+
+.load-complete
+  -webkit-animation: none;
+  animation: none;
+  border-color: $check-color;
+  transition: border 500ms ease-out;
+
+.checkmark
+  display: none;
+  
+  &.draw:after
+    animation-duration: 800ms;
+    animation-timing-function: ease;
+    animation-name: checkmark;
+    transform: scaleX(-1) rotate(135deg);
+  
+  &:after
+    opacity: 1;
+    height: $check-height;
+    width: $check-width;
+    transform-origin: left top;
+    border-right: $check-thickness solid $check-color;
+    border-top: $check-thickness solid $check-color;
+    content: '';
+    left: $check-left;
+    top: $check-height;
+    position: absolute;
+
+@keyframes loader-spin
+  0%
+    transform: rotate(0deg);
+
+  100%
+    transform: rotate(360deg);
+
+@keyframes checkmark
+  0%
+    height: 0;
+    width: 0;
+    opacity: 1;
+
+  20%
+    height: 0;
+    width: $check-width;
+    opacity: 1;
+
+  40%
+    height: $check-height;
+    width: $check-width;
+    opacity: 1;
+
+  100%
+    height: $check-height;
+    width: $check-width;
+    opacity: 1;
+
+$color-red = #f86;
+$mark-size = $loader-size/2;
+
+.error-mark
+    display: none;
+
+    .circle,
+    .circle-border
+        width: $loader-size;
+        height: $loader-size;
+        border-radius: 50%;
+
+    .circle
+        z-index: 1;
+        position: relative;
+        background: white;
+        transform: scale(1);
+        animation: success-anim 700ms ease;
+
+    .circle-border
+        z-index: 0;
+        position: absolute;
+        transform: scale(1.02);
+        animation: circle-anim 400ms ease;
+        background: $color-red;
+
+    @keyframes success-anim
+        0%
+            transform: scale(0);
+        30%
+            transform: scale(0);
+        100%
+            transform: scale(1);
+
+    @keyframes circle-anim
+        from
+            transform: scale(0);
+        to
+            transform: scale(1.02);
+
+    .error::before,
+    .error::after
+        content: "";
+        display: block;
+        height: 3px;
+        background: $color-red;
+        position: absolute;
+
+    .error::before
+        width: $mark-size;
+        top: 48%;
+        left: 26%;
+        transform: rotateZ(50deg);
+
+    .error::after
+        width: $mark-size;
+        top: 48%;
+        left: 26%;
+        transform: rotateZ(-50deg);
