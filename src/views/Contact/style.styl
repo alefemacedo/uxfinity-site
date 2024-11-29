@@ -1,0 +1,252 @@
+.contact-form
+    display: flex;
+    flex-direction: column-reverse;
+    color: #000000;
+    gap: 30px;
+
+    .form-description
+        display: flex;
+        flex-direction: column;
+        max-width: 847px;
+        gap: 30px;
+        padding: 23px;
+        position: relative;
+
+        .title
+            font-size: 30px;
+            line-height: 33px;
+            display: inline-flex;
+            text-align: left;
+            max-width: 487px;
+
+        .subtitle
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            line-height: 30px;
+            display: inline-flex;
+            text-align: center;
+            text-transform: none;
+            color: #0D0048;
+        
+        .instructions
+            display: flex;
+            flex-direction: column;
+            gap: 26px;
+
+            .item
+                display: flex;
+                flex-direction: column;
+                max-width: 427px;
+                gap: 11px;
+
+                .label
+                    font-size: 20px;
+                    line-height: 24px;
+                    background: radial-gradient(174.33% 99.92% at 81.8% 51.42%, #E591EF 0.54%, #9E6CEF 100%);
+                    color: transparent;
+                    background-clip: text;
+                
+                .description
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #0D0048;
+
+        .footer
+            margin-top: 165px;
+            margin-left: 23px;
+            margin-bottom: 30px;
+        
+            @media screen and (min-width: 768px)
+                margin-left: 56px;
+
+            .waves
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                z-index 0;
+
+                .wave-1
+                    animation: wave-1 linear 5s infinite;
+                
+                @keyframes wave-1
+                    0%
+                        transform: translateX(0%);
+                    50%
+                        transform: translate(10%, 0%)
+                
+                .wave-2
+                    animation: wave-2 linear 5s infinite;
+                
+                @keyframes wave-2
+                    0%
+                        transform: translateX(0%);
+                    50%
+                        transform: translate(-10%, 0%);
+
+                .wave-3
+                    animation: wave-3 linear 5s infinite;
+
+                @keyframes wave-3
+                    0%
+                        transform: translateX(0%);
+                    50%
+                        transform: translate(30%, 20%);
+
+            .info
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                z-index: 1;
+
+                .contact
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 20px;
+                    line-height: 24px;
+
+                .social-media
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-top: 40px;
+
+                    a
+                        margin-right: 20px;
+
+                        &:last-child
+                            margin-right: 0px;
+
+    .form
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        gap: 28px;
+        background-color: #0D0048;
+        color: #FFF1F1;
+        z-index: 1;
+        padding: 23px;
+
+        &:before
+            content: ' ';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(/src/assets/svg/form_background.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: #0d0048;
+            z-index: -1;
+            border-radius: 50px 0px 0px 50px;
+
+        label
+            display: flex;
+            flex-direction: column;
+            font-weight: 500;
+            font-size: 18px;
+            text-transform: none;
+        
+        input, select, textarea
+            font-family: 'Poppins', sans-serif;
+            background-color: #0D0048;
+            border: 1px solid;
+            border-right: none;
+            border-left: none;
+            border-top: none;
+            height: 46px;
+            padding: 0px 26px;
+            border-radius: 0px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            color: #FFF1F1;
+            
+            ::placeholder
+                color: #FFF1F1;
+            
+            &:focus
+                outline: 1px solid #451841;
+
+        
+        textarea
+            height: 165px;
+            padding-top: 25px;
+        
+        option
+            font-family: 'Poppins', sans-serif;
+            background-color: #F0F0F0;
+            border: none;
+            height: 46px;
+            padding: 0px 26px;
+            border-radius: 0px;
+        
+        .action
+            display: flex;
+            flex-direction: column;
+
+            button
+                height: 72px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-family: "Poppins", sans-serif;
+                color: #F3F3F3;
+                font-size: 16px;
+                font-weight: 500;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                background-color: #9E6CEF;
+                border: none;
+
+                &:disabled
+                    cursor: auto;
+                    background-color: #e9c3e5;
+    
+        .error
+            color: red;
+
+            input, select, textarea
+                border: 0.5px solid red;
+
+            .input-errors .error-msg
+                font-size: 12px;
+        
+        .radio-group
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+
+            label
+                flex-direction: row;
+                align-items: center;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #DFDFDF;
+            
+            input
+                margin: 0px 10px 0px;
+                transform: scale(1.5);
+
+    @media screen and (min-width: 1024px)
+        flex-direction: row;
+        justify-content: space-between;
+
+        .form-description
+            padding: 0px;
+
+            .symbol, .title, .subtitle, .instructions
+                margin-left: 77px;
+
+        .form
+            width: 759px;
+            border-radius: 50px 0px 0px 50px;
+            padding: 157px 79px;
+
+            .radio-group
+                flex-direction: row;
+            
+            .action
+                align-items: flex-end;
+    
+                button
+                    width: 245px;

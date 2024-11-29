@@ -1,0 +1,61 @@
+.header-content
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+
+    .wave-top
+        position: absolute;
+        bottom: -184px;
+        left: 0;
+        z-index: -1;
+
+    .sidebar
+        display: inline;
+        margin-right: -44px;
+
+        &-button
+            cursor: pointer;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            border-radius: 10px;
+            width: 44px;
+            height: 44px;
+            background-color: #FFFFFF;
+            border: 1px #F5F5F7;
+
+    .logo
+        width: 131px;
+        z-index: 1;
+
+    .contact-button
+        position: absolute;
+        display: none;
+
+        a
+            display: inline-block;
+            width: 227px;
+            padding: 13px;
+            border-radius: 10px;
+            background-color: #9E6CEF;
+            text-align: center;
+            font-size: 14px;
+            line-height: 21px;
+            color: #F3F3F3;
+            text-decoration: none;
+    
+
+    @media screen and (min-width: 600px)
+        padding: 34px 118px 15px 118px;
+
+        .sidebar-button
+            left: 118px;
+            top: 34px;
+
+    @media screen and (min-width: 1024px)
+        .contact-button
+            display: inline;
+            right: 118px;
+            top: 34px;
