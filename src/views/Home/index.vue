@@ -126,7 +126,7 @@
                 <div class="title w500">Design que conecta, tecnologia que transforma.</div>
 
                 <div class="text">
-                    <div class="text-1">Conheça a Studio</div>
+                    <div class="text-1">Conheça o Studio</div>
 
                     <div class="text-2">
                         Uxfinity é um estúdio de design especializado em UX/UI focado em criar
@@ -263,10 +263,10 @@
 
                     <div class="items">
                         <div class="discovery item">
-                            <span>Descoberta:</span> Fazemos uma análise profunda, elaboramos o mapa
-                            do site de forma completa e fazemos uma pesquisa de mercado para
-                            posicionar seu produto da melhor forma. Desenvolvemos uma pesquisa
-                            estratégica para desenvolver experiências incríveis.
+                            <span class="w700">Descoberta:</span> Fazemos uma análise profunda,
+                            elaboramos o mapa do site de forma completa e fazemos uma pesquisa de
+                            mercado para posicionar seu produto da melhor forma. Desenvolvemos uma
+                            pesquisa estratégica para desenvolver experiências incríveis.
 
                             <div class="tools">
                                 <span class="tool">Pesquisa</span>
@@ -276,9 +276,9 @@
                         </div>
 
                         <div class="design item">
-                            <span>Design:</span> Construímos produtos acessíveis e intuitivos,
-                            personalizamos cada detalhe para atender os objetivos da sua empresa e
-                            criar uma experiência incrível para seu cliente.
+                            <span class="w700">Design:</span> Construímos produtos acessíveis e
+                            intuitivos, personalizamos cada detalhe para atender os objetivos da sua
+                            empresa e criar uma experiência incrível para seu cliente.
 
                             <div class="tools">
                                 <span class="tool">Wireframe</span>
@@ -288,10 +288,10 @@
                         </div>
 
                         <div class="development item">
-                            <span>Desenvolvimento:</span> Oferecemos um desenvolvimento de ponta a
-                            ponta, desde a arquitetura de informação a codificação moderna. Fazemos
-                            teste de qualidade e uma documentação completa para facilitar a melhoria
-                            contínua do projeto.
+                            <span class="w700">Desenvolvimento:</span> Oferecemos um desenvolvimento
+                            de ponta a ponta, desde a arquitetura de informação a codificação
+                            moderna. Fazemos teste de qualidade e uma documentação completa para
+                            facilitar a melhoria contínua do projeto.
 
                             <div class="tools">
                                 <span class="tool">Wordpress</span>
@@ -303,10 +303,11 @@
                         </div>
 
                         <div class="upgrade item">
-                            <span>Evolução:</span> Oferecemos um pacote com tarefas como ajustes de
-                            design, revisão de usabilidade, implementação de melhorias com base em
-                            feedback de usuários, e para que o produto se mantenha alinhado às
-                            necessidades do usuário e às melhores práticas do mercado.
+                            <span class="w700">Evolução:</span> Oferecemos um pacote com tarefas
+                            como ajustes de design, revisão de usabilidade, implementação de
+                            melhorias com base em feedback de usuários, e para que o produto se
+                            mantenha alinhado às necessidades do usuário e às melhores práticas do
+                            mercado.
 
                             <div class="tools">
                                 <span class="tool">Landing Pages</span>

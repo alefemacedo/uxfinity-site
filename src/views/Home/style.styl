@@ -6,7 +6,7 @@
     .main
         background-color: #0D0048;
         color: #EDEBF8;
-        height: 796px;
+        height: 720px;
 
         .wave-top
             position: absolute;
@@ -67,6 +67,8 @@
                     transform: translate(10%, -10%);
         
         @media screen and (min-width: 768px)
+            height: 796px;
+
             .title
                 margin-left: 60px;
         
@@ -284,11 +286,13 @@
 
                     .tools
                         display: flex;
-                        gap: 10px;
                         flex-wrap: wrap;
+                        justify-content: center;
+                        gap: 10px;
+                        margin-top: 15px;
 
                         .tool
-                            width: 147px;
+                            min-width: 140px;
                             padding: 10px 5px
                             color: #FFFFFF;
                             text-align: center;
@@ -396,6 +400,7 @@
     .quote-2
         display: flex;
         align-items: center;
+        justify-content: center;
         text-align: center;
         background: radial-gradient(174.33% 99.92% at 81.8% 51.42%, #E591EF 0.54%, #9E6CEF 100%);
         padding: 107px 56px;

@@ -39,7 +39,7 @@ const items = ref([
         name: 'home',
     },
     {
-        label: 'Conheça a studio',
+        label: 'Conheça o studio',
         page: '/#meet-studio',
         type: 'link',
         name: 'about',

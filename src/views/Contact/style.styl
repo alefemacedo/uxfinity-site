@@ -1,3 +1,26 @@
+.contact-header
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 23px;
+
+    .title
+        font-size: 30px;
+        line-height: 33px;
+        display: inline-flex;
+        text-align: left;
+        max-width: 487px;
+        margin-bottom: 40px;
+        width: 100%;
+    
+    @media screen and (min-width: 1024px)
+        padding-left: 0px;
+        align-items: center;
+
+        .title
+            text-align: center;
+            margin-left: 77px;
+
 .contact-form
     display: flex;
     flex-direction: column-reverse;
@@ -11,13 +34,6 @@
         gap: 30px;
         padding: 23px;
         position: relative;
-
-        .title
-            font-size: 30px;
-            line-height: 33px;
-            display: inline-flex;
-            text-align: left;
-            max-width: 487px;
 
         .subtitle
             font-family: 'Poppins', sans-serif;
@@ -234,7 +250,7 @@
         .form-description
             padding: 0px;
 
-            .symbol, .title, .subtitle, .instructions
+            .subtitle, .instructions
                 margin-left: 77px;
 
         .form

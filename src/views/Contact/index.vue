@@ -1,9 +1,10 @@
 <template>
     <contact-template>
+        <div class="contact-header">
+            <span class="title w400"> Vamos tirar suas ideias do papel? fala com a gente </span>
+        </div>
         <div class="contact-form">
             <div class="form-description">
-                <img class="symbol" src="@/assets/img/main_symbol.png" style="width: 68px" />
-                <span class="title w400"> Vamos tirar suas ideias do papel? fala com a gente </span>
                 <span class="subtitle w700">Como funciona?</span>
                 <div class="instructions">
                     <div v-for="(item, index) of instructions" :key="index" class="item">
@@ -173,7 +174,7 @@
                 </label>
 
                 <label :class="{ error: v$.data.serviceType.$errors.length }" for="service-type">
-                    Qual serviço está buscando?
+                    Encontrei vocês por
                     <div class="radio-group">
                         <label for="instagram">
                             <input
@@ -236,12 +237,12 @@
                 </label>
 
                 <label :class="{ error: v$.data.message.$errors.length }" for="name">
-                    Mensagem
+                    Me conta um pouco sobre o seu projeto
                     <textarea
                         v-model="v$.data.message.$model"
                         id="name"
                         type="textarea"
-                        placeholder="Me conta um pouco do seu projeto e solicite um orçamento"
+                        placeholder="meu projeto..."
                     ></textarea>
                     <div
                         v-for="error of v$.data.message.$errors"
