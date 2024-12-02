@@ -66,6 +66,25 @@
                 50%
                     transform: translate(10%, -10%);
         
+        .contact-button
+            position: absolute;
+            top: 500px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            a
+                display: inline-block;
+                width: 227px;
+                padding: 13px;
+                border-radius: 10px;
+                background-color: #9E6CEF;
+                text-align: center;
+                font-size: 14px;
+                line-height: 21px;
+                color: #F3F3F3;
+                text-decoration: none;
+        
         @media screen and (min-width: 768px)
             height: 796px;
 
@@ -78,6 +97,10 @@
                 line-height: 66px;
                 text-align: left;
                 margin-left: 115px;
+            
+        @media screen and (min-width: 1024px)
+            .contact-button
+                display: none;
     
     .meet-studio
         display: flex;
@@ -87,6 +110,7 @@
         gap: 80px;
         background-color: #EDEBF8;
         padding: 0px 23px 80px 23px;
+        font-family: 'Poppins', sans-serif;
 
         .title
             max-width: 798px;
@@ -125,6 +149,7 @@
         padding-top: 16px;
         padding-bottom: 16px;
         background: var(--radial-2, radial-gradient(174.33% 99.92% at 81.8% 51.42%, #E591EF 0.54%, #9E6CEF 100%));
+        font-family: 'Poppins', sans-serif;
 
         .title
             text-align: center;
@@ -152,11 +177,19 @@
                     justify-content: center;
                     align-items: center;
                     position: relative;
+                    direction: initial; // Remove parent directions
+                    writing-mode: initial; // Remove parent writing-mode
 
-                .grid-item img
-                    max-width: 100%;
-                    height: auto;
-                    object-fit: contain;
+                .grid-item
+                    img
+                        max-width: 100%;
+                        height: auto;
+                        object-fit: contain;
+                    
+                    figure
+                        margin: 0px;
+                        font-size: 13px;
+                        line-height: 16px;
 
                 .grid-item.top
                     transform: translate(150px, -10px);
@@ -267,6 +300,7 @@
             flex-direction: column;
             max-width: 699px;
             gap: 30px;
+            font-family: 'Poppins', sans-serif;
 
             .title
                 width: 100%;
@@ -279,51 +313,56 @@
                 flex-direction: column;
                 gap: 36px;
 
-                .item
-                    width: 310px;
-                    font-size: 16px;
-                    line-height: 24px;
+                .column
+                    display: flex;
+                    flex-direction: column;
+                    gap: 36px;
 
-                    .tools
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: center;
-                        gap: 10px;
-                        margin-top: 15px;
+                    .item
+                        width: 310px;
+                        font-size: 16px;
+                        line-height: 24px;
+
+                        .tools
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            gap: 10px;
+                            margin-top: 15px;
+
+                            .tool
+                                min-width: 139px;
+                                padding: 10px 5px
+                                color: #FFFFFF;
+                                text-align: center;
+                    
+                    .discovery
+                        span
+                            color: #9E6CEF;
 
                         .tool
-                            min-width: 140px;
-                            padding: 10px 5px
-                            color: #FFFFFF;
-                            text-align: center;
-                
-                .discovery
-                    span
-                        color: #9E6CEF;
+                            background-color: #9E6CEF;
+                    
+                    .design
+                        span
+                            color: #F57AAE;
 
-                    .tool
-                        background-color: #9E6CEF;
-                
-                .design
-                    span
-                        color: #F57AAE;
+                        .tool
+                            background-color: #F57AAE;
+                    
+                    .development
+                        span
+                            color: #0D0048;
 
-                    .tool
-                        background-color: #F57AAE;
-                
-                .development
-                    span
-                        color: #0D0048;
+                        .tool
+                            background-color: #0D0048;
+                    
+                    .upgrade
+                        span
+                            color: #0095A9;
 
-                    .tool
-                        background-color: #0D0048;
-                
-                .upgrade
-                    span
-                        color: #0095A9;
-
-                    .tool
-                        background-color: #0095A9;
+                        .tool
+                            background-color: #0095A9;
 
         @media screen and (min-width: 768px)
             .process
@@ -428,15 +467,19 @@
             display: flex;
             flex-direction: column;
             gap: 59px;
+            font-family: 'Poppins', sans-serif;
 
             .photo img
                 width: 344px;
+                height: 401px;
+                object-fit: cover;
+                
 
             .profile
                 padding: 23px;
 
                 .presentation
-                    width: 305px;
+                    width: 391px;
                     font-size: 16px;
                     line-height: 19px;
                     margin-bottom: 16px;
@@ -452,3 +495,4 @@
         @media screen and (min-width: 900px)
             .member
                 flex-direction: row;
+                align-items: center;

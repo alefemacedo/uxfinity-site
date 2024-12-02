@@ -120,6 +120,10 @@
                         </defs>
                     </svg>
                 </div>
+
+                <div class="contact-button">
+                    <router-link to="/contato">conte sua ideia pra gente</router-link>
+                </div>
             </div>
 
             <div id="meet-studio" class="meet-studio section">
@@ -194,21 +198,37 @@
                             </textPath>
                         </text>
                     </svg>
+
                     <div class="grid-container">
                         <div class="grid-item bottom">
-                            <img src="@/assets/img/user_research.png" alt="Pesquisa com usuário" />
+                            <figure>
+                                <img src="@/assets/img/user_research.png" />
+                                <figcaption>Pesquisa com usuário</figcaption>
+                            </figure>
                         </div>
                         <div class="grid-item top">
-                            <img src="@/assets/img/wireframe.png" alt="Wireframe" />
+                            <figure>
+                                <img src="@/assets/img/wireframe.png" />
+                                <figcaption>Design de sites</figcaption>
+                            </figure>
                         </div>
                         <div class="grid-item bottom">
-                            <img src="@/assets/img/navigable_prototypes.png" alt="Image 1" />
+                            <figure>
+                                <img src="@/assets/img/app_design.png" />
+                                <figcaption>Design de aplicativos</figcaption>
+                            </figure>
                         </div>
                         <div class="grid-item top">
-                            <img src="@/assets/img/development.png" alt="Image 1" />
+                            <figure>
+                                <img src="@/assets/img/redesign.png" />
+                                <figcaption>Redesign de produtos digitais</figcaption>
+                            </figure>
                         </div>
                         <div class="grid-item bottom">
-                            <img src="@/assets/img/consultancy.png" alt="Image 1" />
+                            <figure>
+                                <img src="@/assets/img/consultancy.png" />
+                                <figcaption>Consultoria para melhoria de produto</figcaption>
+                            </figure>
                         </div>
                     </div>
                 </div>
@@ -262,57 +282,61 @@
                     <div class="title">Processos</div>
 
                     <div class="items">
-                        <div class="discovery item">
-                            <span class="w700">Descoberta:</span> Fazemos uma análise profunda,
-                            elaboramos o mapa do site de forma completa e fazemos uma pesquisa de
-                            mercado para posicionar seu produto da melhor forma. Desenvolvemos uma
-                            pesquisa estratégica para desenvolver experiências incríveis.
+                        <div class="column">
+                            <div class="discovery item">
+                                <span class="w700">Descoberta:</span> Fazemos uma análise profunda,
+                                elaboramos o mapa do site de forma completa e fazemos uma pesquisa
+                                de mercado para posicionar seu produto da melhor forma.
+                                Desenvolvemos uma pesquisa estratégica para desenvolver experiências
+                                incríveis.
 
-                            <div class="tools">
-                                <span class="tool">Pesquisa</span>
-                                <span class="tool">Plano estratégico</span>
-                                <span class="tool">UX Research</span>
+                                <div class="tools">
+                                    <span class="tool">Pesquisa</span>
+                                    <span class="tool">Plano estratégico</span>
+                                    <span class="tool">UX Research</span>
+                                </div>
+                            </div>
+
+                            <div class="design item">
+                                <span class="w700">Design:</span> Construímos produtos acessíveis e
+                                intuitivos, personalizamos cada detalhe para atender os objetivos da
+                                sua empresa e criar uma experiência incrível para seu cliente.
+
+                                <div class="tools">
+                                    <span class="tool">Wireframe</span>
+                                    <span class="tool">UX Design</span>
+                                    <span class="tool">UI Design</span>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="design item">
-                            <span class="w700">Design:</span> Construímos produtos acessíveis e
-                            intuitivos, personalizamos cada detalhe para atender os objetivos da sua
-                            empresa e criar uma experiência incrível para seu cliente.
+                        <div class="column">
+                            <div class="development item">
+                                <span class="w700">Desenvolvimento:</span> Oferecemos um
+                                desenvolvimento Front-End para transformar o design em interfaces
+                                funcionais, desde a arquitetura de informação à codificação das
+                                views e iterações do usuário. Fazemos teste de qualidade e uma
+                                documentação completa para facilitar a melhoria contínua do projeto.
 
-                            <div class="tools">
-                                <span class="tool">Wireframe</span>
-                                <span class="tool">UX Design</span>
-                                <span class="tool">UI Design</span>
+                                <div class="tools">
+                                    <span class="tool">Wordpress</span>
+                                    <span class="tool">Vue.js</span>
+                                    <span class="tool">Angular</span>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="development item">
-                            <span class="w700">Desenvolvimento:</span> Oferecemos um desenvolvimento
-                            de ponta a ponta, desde a arquitetura de informação a codificação
-                            moderna. Fazemos teste de qualidade e uma documentação completa para
-                            facilitar a melhoria contínua do projeto.
+                            <div class="upgrade item">
+                                <span class="w700">Evolução:</span> Oferecemos um pacote com tarefas
+                                como ajustes de design, revisão de usabilidade, implementação de
+                                melhorias com base em feedback de usuários, e para que o produto se
+                                mantenha alinhado às necessidades do usuário e às melhores práticas
+                                do mercado.
 
-                            <div class="tools">
-                                <span class="tool">Wordpress</span>
-                                <span class="tool">Vue.js</span>
-                                <span class="tool">SpringBoot</span>
-                                <span class="tool">Angular</span>
-                                <span class="tool">FastAPI</span>
-                            </div>
-                        </div>
-
-                        <div class="upgrade item">
-                            <span class="w700">Evolução:</span> Oferecemos um pacote com tarefas
-                            como ajustes de design, revisão de usabilidade, implementação de
-                            melhorias com base em feedback de usuários, e para que o produto se
-                            mantenha alinhado às necessidades do usuário e às melhores práticas do
-                            mercado.
-
-                            <div class="tools">
-                                <span class="tool">Landing Pages</span>
-                                <span class="tool">Aplicativos</span>
-                                <span class="tool">Sites Institucionais e +</span>
+                                <div class="tools">
+                                    <span class="tool">Landing Pages</span>
+                                    <span class="tool">Aplicativos</span>
+                                    <span class="tool">Sites Institucionais e +</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -394,9 +418,8 @@ const services = [
         title: 'Desenvolvimento',
         tools: [
             'Arquitetura de Software',
-            'planejamento de APIs, integrações e estruturação de banco de dados.',
+            'Integração com APIs',
             'Desenvolvimento Front-End',
-            'Desenvolvimento Back-End',
             'Suporte e Manutenção',
         ],
     },
