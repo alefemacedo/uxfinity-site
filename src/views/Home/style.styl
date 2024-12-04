@@ -18,7 +18,7 @@
             max-width: 740px;
             font-size: 24px;
             line-height: 26px;
-            margin-top: 157px;
+            margin-top: 200px;
             text-align: center;
         
         &::before
@@ -68,21 +68,21 @@
         
         .contact-button
             position: absolute;
-            top: 500px;
+            top: 360px;
             display: flex;
             justify-content: center;
             width: 100%;
 
             a
                 display: inline-block;
-                width: 227px;
+                width: 254px;
                 padding: 13px;
                 border-radius: 10px;
-                background-color: #9E6CEF;
+                background-color: #0095A9;
                 text-align: center;
                 font-size: 14px;
                 line-height: 21px;
-                color: #F3F3F3;
+                color: #FFFFFF;
                 text-decoration: none;
         
         @media screen and (min-width: 768px)
@@ -148,7 +148,7 @@
         text-transform: none;
         padding-top: 16px;
         padding-bottom: 16px;
-        background: var(--radial-2, radial-gradient(174.33% 99.92% at 81.8% 51.42%, #E591EF 0.54%, #9E6CEF 100%));
+        background: radial-gradient(174.33% 99.92% at 81.8% 51.42%, #E591EF 0.54%, #9E6CEF 100%);
         font-family: 'Poppins', sans-serif;
 
         .title
@@ -158,65 +158,102 @@
             margin-bottom: 45px;
         
         .container
-            position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
+            position: relative;
 
             .grid-container
                 display: grid;
-                grid-template-columns: repeat(2, 1fr); /* Two columns */
-                grid-template-rows: repeat(auto-fill, minmax(150px, auto)); /* Dynamic rows */
-                gap: 25px; /* Spacing between items */
+                grid-template-columns: repeat(5, minmax(150px, auto));
+                grid-template-rows: repeat(2, 1fr);
+                row-gap: 25px; /* Spacing between items */
                 position: relative; /* To allow pseudo-elements if needed */
-                direction: rtl; /* Right-to-left direction flips columns */
-                writing-mode: vertical-lr; /* Switches rows to columns */
-
-                .grid-item
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    position: relative;
-                    direction: initial; // Remove parent directions
-                    writing-mode: initial; // Remove parent writing-mode
+                width: 100%;
 
                 .grid-item
                     img
-                        max-width: 100%;
+                        max-width: 150px;
                         height: auto;
                         object-fit: contain;
-                    
+
                     figure
                         margin: 0px;
-                        font-size: 13px;
+                        font-size: 16px;
                         line-height: 16px;
+                        font-weight: 500;
+
+                        figcaption
+                            width: 200px;
+                            margin-top: 10px;
 
                 .grid-item.top
-                    transform: translate(150px, -10px);
-                    align-self: start; /* Place item at the top */
-
+                    transform: translate(50px, -10px);
+                
                 .grid-item.bottom
-                    transform: translateX(-20px);
-                    align-self: end; /* Place item at the bottom */
-                    margin-right: 25px;
+                    transform: translateX(10px);
+                
+                .first
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                
+                .second
+                    grid-column-start: 2;
+                    grid-column-end: 3;
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                
+                .third
+                    grid-column-start: 3;
+                    grid-column-end: 4;
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                
+                .fourth
+                    grid-column-start: 4;
+                    grid-column-end: 5;
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+
+                .fifth
+                    grid-column-start: 5;
+                    grid-column-end: 6;
+                    grid-row-start: 2;
+                    grid-row-end: 3;
         
         @media screen and (min-width: 768px)
             display: flow;
         
         @media screen and (min-width: 900px)
             .title
-                font-size: 96px;
-                line-height: 96px;
+                font-size: 50px;
+                line-height: 60px;
 
+            .container .grid-container
+                .grid-item img
+                    max-width: 100%;
+
+                .grid-item.top
+                    transform: translate(-10px, 10px);
+                
+                .grid-item.bottom
+                    transform: none;
+
+        @media screen and (min-width: 1024px)
             .container .grid-container .grid-item.bottom
-                margin-right: 50px;
+                margin-right: 10px;
+                margin-left: 10px;
 
         @media screen and (min-width: 1200px)
-            .container .grid-container
-                gap: 50px;
-
-                .grid-item.bottom
-                    margin-right: 100px;
+            .container .grid-container .grid-item.bottom
+                margin: 0px;
+                transform: translateX(50px);
+    
+        @media screen and (min-width: 1450px)
+            .container .grid-container .grid-item.bottom
+                transform: translateX(minmax(150px, auto));
         
     .mission
         display: flex;
@@ -479,7 +516,7 @@
                 padding: 23px;
 
                 .presentation
-                    width: 391px;
+                    width: 305px;
                     font-size: 16px;
                     line-height: 19px;
                     margin-bottom: 16px;
@@ -491,6 +528,9 @@
 
                 .profile
                     padding: 0px;
+
+                    .presentation
+                        width: 391px;
 
         @media screen and (min-width: 900px)
             .member

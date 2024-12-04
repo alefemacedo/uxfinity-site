@@ -5,6 +5,7 @@
         </div>
         <div class="contact-form">
             <div class="form-description">
+                <span class="title w400"> Vamos tirar suas ideias do papel? fala com a gente </span>
                 <span class="subtitle w700">Como funciona?</span>
                 <div class="instructions">
                     <div v-for="(item, index) of instructions" :key="index" class="item">

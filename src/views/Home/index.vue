@@ -200,31 +200,31 @@
                     </svg>
 
                     <div class="grid-container">
-                        <div class="grid-item bottom">
+                        <div class="grid-item bottom first">
                             <figure>
                                 <img src="@/assets/img/user_research.png" />
                                 <figcaption>Pesquisa com usuário</figcaption>
                             </figure>
                         </div>
-                        <div class="grid-item top">
+                        <div class="grid-item top second">
                             <figure>
                                 <img src="@/assets/img/wireframe.png" />
                                 <figcaption>Design de sites</figcaption>
                             </figure>
                         </div>
-                        <div class="grid-item bottom">
+                        <div class="grid-item bottom third">
                             <figure>
                                 <img src="@/assets/img/app_design.png" />
                                 <figcaption>Design de aplicativos</figcaption>
                             </figure>
                         </div>
-                        <div class="grid-item top">
+                        <div class="grid-item top fourth">
                             <figure>
                                 <img src="@/assets/img/redesign.png" />
                                 <figcaption>Redesign de produtos digitais</figcaption>
                             </figure>
                         </div>
-                        <div class="grid-item bottom">
+                        <div class="grid-item bottom fifth">
                             <figure>
                                 <img src="@/assets/img/consultancy.png" />
                                 <figcaption>Consultoria para melhoria de produto</figcaption>

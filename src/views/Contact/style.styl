@@ -1,25 +1,20 @@
 .contact-header
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding-left: 23px;
 
     .title
         font-size: 30px;
         line-height: 33px;
         display: inline-flex;
-        text-align: left;
+        text-align: center;
         max-width: 487px;
         margin-bottom: 40px;
         width: 100%;
     
     @media screen and (min-width: 1024px)
-        padding-left: 0px;
-        align-items: center;
-
-        .title
-            text-align: center;
-            margin-left: 77px;
+        display: none;
 
 .contact-form
     display: flex;
@@ -34,6 +29,13 @@
         gap: 30px;
         padding: 23px;
         position: relative;
+
+        .title
+            font-size: 30px;
+            line-height: 33px;
+            display: inline-flex;
+            text-align: left;
+            max-width: 487px;
 
         .subtitle
             font-family: 'Poppins', sans-serif;
@@ -169,7 +171,7 @@
             border-left: none;
             border-top: none;
             height: 46px;
-            padding: 0px 26px;
+            padding: 0px 10px;
             border-radius: 0px;
             margin-top: 15px;
             margin-bottom: 5px;
@@ -184,7 +186,7 @@
         
         textarea
             height: 165px;
-            padding-top: 25px;
+            padding-top: 15px;
         
         option
             font-family: 'Poppins', sans-serif;
@@ -215,7 +217,7 @@
 
                 &:disabled
                     cursor: auto;
-                    background-color: #e9c3e5;
+                    background-color: #b3b2b3;
     
         .error
             color: red;
@@ -245,10 +247,14 @@
 
     @media screen and (min-width: 1024px)
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
 
         .form-description
             padding: 0px;
+
+            .title
+                display: inline-block;
+                margin-left: 77px;
 
             .subtitle, .instructions
                 margin-left: 77px;
