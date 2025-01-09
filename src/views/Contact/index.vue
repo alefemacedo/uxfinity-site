@@ -1,16 +1,20 @@
 <template>
     <contact-template>
         <div class="contact-header">
-            <span class="title w400"> Vamos tirar suas ideias do papel? fala com a gente </span>
+            <span class="title w400"> {{ $t('contact.title') }} </span>
         </div>
         <div class="contact-form">
             <div class="form-description">
-                <span class="title w400"> Vamos tirar suas ideias do papel? fala com a gente </span>
-                <span class="subtitle w700">Como funciona?</span>
+                <span class="title w400"> {{ $t('contact.title') }} </span>
+                <span class="subtitle w700">{{ $t('contact.subtitle') }}</span>
                 <div class="instructions">
-                    <div v-for="(item, index) of instructions" :key="index" class="item">
-                        <div class="label w700">{{ item.label }}</div>
-                        <span class="description w400">{{ item.description }}</span>
+                    <div v-for="(instruction, index) of instructions" :key="index" class="item">
+                        <div class="label w700">
+                            {{ $t(`contact.instructions.labels.${instruction}`) }}
+                        </div>
+                        <span class="description w400">{{
+                            $t(`contact.instructions.descriptions.${instruction}`)
+                        }}</span>
                     </div>
                 </div>
 
@@ -146,7 +150,7 @@
 
             <div class="form">
                 <label :class="{ error: v$.data.name.$errors.length }" for="name">
-                    Nome
+                    {{ $t('contact.form.name') }}
                     <input v-model="v$.data.name.$model" id="name" type="text" />
                     <div
                         v-for="error of v$.data.name.$errors"
@@ -158,7 +162,7 @@
                 </label>
 
                 <label :class="{ error: v$.data.email.$errors.length }" for="email">
-                    E-mail
+                    {{ $t('contact.form.email') }}
                     <input
                         v-model="v$.data.email.$model"
                         id="email"
@@ -175,7 +179,7 @@
                 </label>
 
                 <label :class="{ error: v$.data.serviceType.$errors.length }" for="service-type">
-                    Encontrei vocês por
+                    {{ $t('contact.form.service_type') }}
                     <div class="radio-group">
                         <label for="instagram">
                             <input
@@ -185,7 +189,7 @@
                                 value="instagram"
                                 id="instagram"
                             />
-                            Instagram
+                            {{ $t('contact.form.instagram') }}
                         </label>
                         <label for="recommendation">
                             <input
@@ -195,7 +199,7 @@
                                 value="recommendation"
                                 id="recommendation"
                             />
-                            Indicação
+                            {{ $t('contact.form.indication') }}
                         </label>
                         <label for="google">
                             <input
@@ -205,7 +209,7 @@
                                 name="serviceType"
                                 id="google"
                             />
-                            Google
+                            {{ $t('contact.form.google') }}
                         </label>
                         <label for="linkedin">
                             <input
@@ -215,7 +219,7 @@
                                 name="serviceType"
                                 id="linkedin"
                             />
-                            LinkedIn
+                            {{ $t('contact.form.linkedin') }}
                         </label>
                         <label for="other">
                             <input
@@ -225,7 +229,7 @@
                                 name="serviceType"
                                 id="other"
                             />
-                            Outro
+                            {{ $t('contact.form.other') }}
                         </label>
                     </div>
                     <div
@@ -237,13 +241,13 @@
                     </div>
                 </label>
 
-                <label :class="{ error: v$.data.message.$errors.length }" for="name">
-                    Me conta um pouco sobre o seu projeto
+                <label :class="{ error: v$.data.message.$errors.length }" for="message">
+                    {{ $t('contact.form.message') }}
                     <textarea
                         v-model="v$.data.message.$model"
-                        id="name"
+                        id="message"
                         type="textarea"
-                        placeholder="meu projeto..."
+                        :placeholder="$t('contact.form.message_placeholder')"
                     ></textarea>
                     <div
                         v-for="error of v$.data.message.$errors"
@@ -256,7 +260,7 @@
 
                 <div class="action">
                     <button :disabled="v$.$invalid" class="send-button" @click="sendEmail">
-                        enviar mensagem
+                        {{ $t('contact.form.send_button') }}
                     </button>
 
                     <img
@@ -291,26 +295,7 @@ const defaultFormData = {
     message: '',
 }
 
-const instructions = [
-    {
-        label: 'Entre em contato',
-        description: 'Estamos felizes que você tenha interesse nos nossos serviço',
-    },
-    {
-        label: 'Retorno rápido',
-        description: `Alguém do nosso time vai entrar em contato para agendarmos um papo e
-            conhecer melhor o projeto`,
-    },
-    {
-        label: 'Proposta',
-        description: `Aqui, apresentamos para você como nossa empresa vai trabalhar na sua
-            ideia e oferecemos uma proposta para seu negócio.`,
-    },
-    {
-        label: 'Curtiu?',
-        description: 'Aqui começamos a transformar a experiência do seu negócio!',
-    },
-]
+const instructions = ['touch', 'return', 'proposal', 'like_it']
 
 defineOptions({
     name: 'ui-contact',

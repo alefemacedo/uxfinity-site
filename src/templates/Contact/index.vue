@@ -5,6 +5,7 @@
             :wave-top="false"
             :show-contact-button="false"
             logo="img/logo_original.png"
+            theme="dark"
         />
     </div>
 

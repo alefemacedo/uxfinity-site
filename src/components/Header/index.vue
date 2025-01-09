@@ -10,8 +10,12 @@
 
         <img :src="getAsset(logo)" class="logo" />
 
+        <ui-language-switcher :theme="theme" />
+
         <div v-if="showContactButton" class="contact-button">
-            <router-link to="/contato">conte sua ideia pra gente</router-link>
+            <router-link to="/contato">
+                {{ $t('home.contact_button') }}
+            </router-link>
         </div>
     </div>
 </template>
@@ -19,12 +23,14 @@
 <script setup>
 import Menu from '@/components/Menu'
 import helpers from '@/mixins/helpers'
+import LanguageSwitcher from '@/components/LanguageSwitcher'
 
 defineOptions({
     name: 'ui-header',
 
     components: {
         'ui-menu': Menu,
+        'ui-language-switcher': LanguageSwitcher,
     },
 
     mixins: [helpers],
@@ -47,6 +53,12 @@ defineProps({
         type: Boolean,
         required: false,
         default: true,
+    },
+
+    theme: {
+        type: String,
+        required: false,
+        default: 'light',
     },
 })
 

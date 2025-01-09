@@ -2,7 +2,7 @@
     <div class="footer">
         <div class="contact-info">
             <div class="info">
-                <div class="title w600">Chega de conversa, vamos construir algo juntos!</div>
+                <div class="title w600">{{ $t('footer.title') }}</div>
 
                 <div class="contact w400">
                     <div class="phone">(64) 9 92788588</div>
@@ -27,7 +27,7 @@
 
         <div class="quote">
             <div class="text">
-                <span class="w275"> Vamos conversar </span>
+                <span class="w275"> {{ $t('footer.quote') }} </span>
             </div>
             <img src="@/assets/svg/circled_text.svg" class="circled-text" />
         </div>

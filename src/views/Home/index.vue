@@ -6,7 +6,7 @@
 
                 <div class="title">
                     <span class="w400">
-                        Mais que design, criamos conexões que impactam e inspiram.
+                        {{ $t('home.title') }}
                     </span>
                 </div>
 
@@ -122,43 +122,26 @@
                 </div>
 
                 <div class="contact-button">
-                    <router-link to="/contato">conte sua ideia pra gente</router-link>
+                    <router-link to="/contato">
+                        {{ $t('home.contact_button') }}
+                    </router-link>
                 </div>
             </div>
 
             <div id="meet-studio" class="meet-studio section">
-                <div class="title w500">Design que conecta, tecnologia que transforma.</div>
+                <div class="title w500">{{ $t('about.title') }}</div>
 
                 <div class="text">
-                    <div class="text-1">Conheça o Studio</div>
+                    <div class="text-1">{{ $t('about.text_1') }}</div>
 
-                    <div class="text-2">
-                        Uxfinity é um estúdio de design especializado em UX/UI focado em criar
-                        experiências digitais intuitivas e acessíveis que melhoram a experiência de
-                        quem importa, o usuário final do nosso cliente.
-                        <br />
-                        <br />
-                        Em um mundo cada vez mais digital, muitas empresas enfrentam dificuldades em
-                        construir interfaces que sejam fáceis de usar, com boa experiência de
-                        navegação, acessíveis e que realmente atendam às necessidades dos usuários.
-                        <br />
-                        <br />
-                        Nossa abordagem centrada no usuário permite entender profundamente as
-                        expectativas dos consumidores e traduzi-las em interfaces visuais e
-                        interativas de alta qualidade, acessíveis e eficientes.
-                    </div>
+                    <div class="text-2" v-html="$t('about.text_2')"></div>
 
-                    <div class="text-3">
-                        Nos diferenciamos oferecer soluções personalizadas e consultoria contínua,
-                        permitindo que as empresas não só lancem produtos com um design de alto
-                        nível, mas também mantenham a experiência do usuário alinhada com as
-                        expectativas do mercado.
-                    </div>
+                    <div class="text-3">{{ $t('about.text_3') }}</div>
                 </div>
             </div>
 
             <div class="offered-services section">
-                <div class="title">O que fazemos</div>
+                <div class="title">{{ $t('offered_services.title') }}</div>
                 <div class="container">
                     <svg
                         width="100%"
@@ -193,8 +176,7 @@
                                 xlink:href="#curve"
                                 :startOffset="startOffset + '%'"
                             >
-                                Design de ponta a ponta. Design de ponta a ponta. Design de ponta a
-                                ponta.
+                                {{ $t('offered_services.curve_path') }}
                             </textPath>
                         </text>
                     </svg>
@@ -203,31 +185,31 @@
                         <div class="grid-item bottom first">
                             <figure>
                                 <img src="@/assets/img/user_research.png" />
-                                <figcaption>Pesquisa com usuário</figcaption>
+                                <figcaption>{{ $t('offered_services.user_research') }}</figcaption>
                             </figure>
                         </div>
                         <div class="grid-item top second">
                             <figure>
                                 <img src="@/assets/img/wireframe.png" />
-                                <figcaption>Design de sites</figcaption>
+                                <figcaption>{{ $t('offered_services.wireframe') }}</figcaption>
                             </figure>
                         </div>
                         <div class="grid-item bottom third">
                             <figure>
                                 <img src="@/assets/img/app_design.png" />
-                                <figcaption>Design de aplicativos</figcaption>
+                                <figcaption>{{ $t('offered_services.app_design') }}</figcaption>
                             </figure>
                         </div>
                         <div class="grid-item top fourth">
                             <figure>
                                 <img src="@/assets/img/redesign.png" />
-                                <figcaption>Redesign de produtos digitais</figcaption>
+                                <figcaption>{{ $t('offered_services.redesign') }}</figcaption>
                             </figure>
                         </div>
                         <div class="grid-item bottom fifth">
                             <figure>
                                 <img src="@/assets/img/consultancy.png" />
-                                <figcaption>Consultoria para melhoria de produto</figcaption>
+                                <figcaption>{{ $t('offered_services.consultancy') }}</figcaption>
                             </figure>
                         </div>
                     </div>
@@ -237,27 +219,27 @@
             <div class="mission section">
                 <div class="text w400">
                     <div class="line">
-                        Transformamos ideias em
+                        {{ $t('mission.line_1') }}
                         <div class="line-mask"></div>
                     </div>
                     <div class="line">
-                        soluções impactantes,
+                        {{ $t('mission.line_2') }}
                         <div class="line-mask"></div>
                     </div>
                     <div class="line">
-                        unindo design, tecnologia
+                        {{ $t('mission.line_3') }}
                         <div class="line-mask"></div>
                     </div>
                     <div class="line">
-                        e inovação para ajudar
+                        {{ $t('mission.line_4') }}
                         <div class="line-mask"></div>
                     </div>
                     <div class="line">
-                        empresas a alcançar todo
+                        {{ $t('mission.line_5') }}
                         <div class="line-mask"></div>
                     </div>
                     <div class="line">
-                        o seu potencial.
+                        {{ $t('mission.line_6') }}
                         <div class="line-mask"></div>
                     </div>
                 </div>
@@ -268,108 +250,63 @@
                     <img src="@/assets/svg/pipeline.svg" />
                 </div>
 
-                <div class="pipeline w700">
-                    Descoberta
-                    <span class="separator"></span>
-                    Design
-                    <span class="separator"></span>
-                    Desenvolvimento
-                    <span class="separator"></span>
-                    Evolução
-                </div>
+                <div class="pipeline w700" v-html="$t('process_services.pipeline')"></div>
 
                 <div class="process">
                     <div class="title">Processos</div>
 
                     <div class="items">
                         <div class="column">
-                            <div class="discovery item">
-                                <span class="w700">Descoberta:</span> Fazemos uma análise profunda,
-                                elaboramos o mapa do site de forma completa e fazemos uma pesquisa
-                                de mercado para posicionar seu produto da melhor forma.
-                                Desenvolvemos uma pesquisa estratégica para desenvolver experiências
-                                incríveis.
+                            <div
+                                class="discovery item"
+                                v-html="$t('process_services.discovery')"
+                            ></div>
 
-                                <div class="tools">
-                                    <span class="tool">Pesquisa</span>
-                                    <span class="tool">Plano estratégico</span>
-                                    <span class="tool">UX Research</span>
-                                </div>
-                            </div>
-
-                            <div class="design item">
-                                <span class="w700">Design:</span> Construímos produtos acessíveis e
-                                intuitivos, personalizamos cada detalhe para atender os objetivos da
-                                sua empresa e criar uma experiência incrível para seu cliente.
-
-                                <div class="tools">
-                                    <span class="tool">Wireframe</span>
-                                    <span class="tool">UX Design</span>
-                                    <span class="tool">UI Design</span>
-                                </div>
-                            </div>
+                            <div class="design item" v-html="$t('process_services.design')"></div>
                         </div>
 
                         <div class="column">
-                            <div class="development item">
-                                <span class="w700">Desenvolvimento:</span> Oferecemos um
-                                desenvolvimento Front-End para transformar o design em interfaces
-                                funcionais, desde a arquitetura de informação à codificação das
-                                views e iterações do usuário. Fazemos teste de qualidade e uma
-                                documentação completa para facilitar a melhoria contínua do projeto.
+                            <div
+                                class="development item"
+                                v-html="$t('process_services.development')"
+                            ></div>
 
-                                <div class="tools">
-                                    <span class="tool">Wordpress</span>
-                                    <span class="tool">Vue.js</span>
-                                    <span class="tool">Angular</span>
-                                </div>
-                            </div>
-
-                            <div class="upgrade item">
-                                <span class="w700">Evolução:</span> Oferecemos um pacote com tarefas
-                                como ajustes de design, revisão de usabilidade, implementação de
-                                melhorias com base em feedback de usuários, e para que o produto se
-                                mantenha alinhado às necessidades do usuário e às melhores práticas
-                                do mercado.
-
-                                <div class="tools">
-                                    <span class="tool">Landing Pages</span>
-                                    <span class="tool">Aplicativos</span>
-                                    <span class="tool">Sites Institucionais e +</span>
-                                </div>
-                            </div>
+                            <div class="upgrade item" v-html="$t('process_services.upgrade')"></div>
                         </div>
                     </div>
                 </div>
 
                 <div class="quote">
-                    Para nós, UX não é só sobre estética, é sobre impacto. Criamos soluções que
-                    engajam, resolvem problemas e agregam valor.
+                    {{ $t('process_services.quote') }}
                 </div>
 
                 <div class="services w400">
-                    <div class="title">Serviços oferecidos</div>
+                    <div class="title">{{ $t('process_services.services.title') }}</div>
 
                     <div class="items">
                         <div v-for="(item, index) of services" :key="index" class="item">
-                            <span class="item-title">{{ item.title }}</span>
+                            <span class="item-title">{{
+                                $t(`process_services.services.items.titles.${item.title}`)
+                            }}</span>
 
                             <ul>
                                 <li v-for="(tool, tIndex) of item.tools" :key="tIndex">
-                                    {{ tool }}
+                                    {{ $t(`process_services.services.items.tools.${tool}`) }}
                                 </li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="contact-button">
-                        <router-link to="contato"> fale com a gente </router-link>
+                        <router-link to="contato">
+                            {{ $t('process_services.services.contact_button') }}</router-link
+                        >
                     </div>
                 </div>
             </div>
 
             <div class="quote-2 section">
-                <span class="w500"> De ideias a experiências que conectam pessoas e marcas. </span>
+                <span class="w500"> {{ $t('home.quote') }} </span>
             </div>
 
             <div id="team" class="team section">
@@ -379,9 +316,11 @@
                     </div>
 
                     <div class="profile w400">
-                        <div class="tags">{{ member.tags }}</div>
-                        <div class="presentation">{{ member.presentation }}</div>
-                        <div class="name w700">{{ member.name }}</div>
+                        <div class="tags">{{ $t(`team.tags.${member.tags}`) }}</div>
+                        <div class="presentation">
+                            {{ $t(`team.presentations.${member.presentation}`) }}
+                        </div>
+                        <div class="name w700">{{ $t(`team.names.${member.name}`) }}</div>
                     </div>
                 </div>
             </div>
@@ -396,57 +335,29 @@ import helpers from '@/mixins/helpers'
 
 const services = [
     {
-        title: 'UX Design',
-        tools: [
-            'Entrevista Usuário',
-            'Benchmark',
-            'Estratégia de UX',
-            'Acessibilidade',
-            'Testes de usabilidade',
-        ],
+        title: 'ux_design',
+        tools: ['user_interview', 'benchmark', 'ux_strategy', 'accessibility', 'usability'],
     },
     {
-        title: 'UI Design',
-        tools: [
-            'Arquitetura de Informação',
-            'Protótipos em baixa e alta fidelidade',
-            'Prototipagem Interativa',
-            'Design System',
-        ],
+        title: 'ui_design',
+        tools: ['architecture', 'high_low', 'interactive', 'design_system'],
     },
     {
-        title: 'Desenvolvimento',
-        tools: [
-            'Arquitetura de Software',
-            'Integração com APIs',
-            'Desenvolvimento Front-End',
-            'Suporte e Manutenção',
-        ],
+        title: 'development',
+        tools: ['software_architecture', 'api_integration', 'front_end', 'maintenance'],
     },
     {
-        title: 'Retainer (Consultoria Contínua)',
-        tools: [
-            `Serviços de Consultoria Contínua: Isso inclui melhorias de design,
-            revisões de usabilidade, implementação de melhorias baseadas no
-            feedback de usuários e suporte em novos desenvolvimentos.`,
-        ],
+        title: 'retainer',
+        tools: ['continuous_consultancy'],
     },
 ]
 
 const teamMembers = [
     {
         photo: 'img/abia_profile.png',
-        presentation: `Sou apaixonada por criar soluções que vão além da
-        estética e priorizam a acessibilidade e a inclusão. Minha jornada
-        inclui mentorias em eventos como o Space Apps Challenge e participações
-        em hackathons, onde ajudo equipes a resolverem problemas complexos e
-        a transformarem ideias em experiências impactantes.
-
-        Com uma visão empática e uma abordagem centrada no ser humano,
-        quero poder desenvolver soluções inovadoras e inclusivas que respeitem
-        a complexidade que é cada usuário.✨`,
-        tags: 'UX Designer | Palestrante | Mentora',
-        name: 'Ábia Bognola, CEO e Fundadora da UXfinity',
+        presentation: 'abia',
+        tags: 'abia',
+        name: 'abia',
     },
 ]
 

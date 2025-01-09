@@ -8,18 +8,22 @@
             :type="item.type"
             :name="item.name"
         />
+
+        <ui-language-switcher />
     </div>
 </template>
 
 <script setup>
 import { ref } from 'vue'
 import MenuItem from '../MenuItem'
+import LanguageSwitcher from '../LanguageSwitcher'
 
 defineOptions({
     name: 'ui-menu',
 
     components: {
         'ui-menu-item': MenuItem,
+        'ui-language-switcher': LanguageSwitcher,
     },
 })
 

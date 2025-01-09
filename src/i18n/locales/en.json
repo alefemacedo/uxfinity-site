@@ -1,0 +1,122 @@
+{
+    "locale": {
+        "en": "EN",
+        "pt": "BR"
+    },
+    "nav": {
+        "home": "Home",
+        "about": "About me",
+        "cases": "Cases",
+        "contact": "Contact"
+    },
+    "home": {
+        "title": "More than design, we create connections that impact and inspire.",
+        "contact_button": "tell us your idea",
+        "quote": "From ideas to experiences that connect people and brands."
+    },
+    "about": {
+        "title": "Design that connects, technology that transforms.",
+        "text_1": "Meet the Studio",
+        "text_2": "Uxfinity is a UX/UI design studio focused on creating intuitive and accessible digital experiences that improve the experience of those who matter, our client's end user.<br /><br /> In an increasingly digital world, many companies face difficulties in building interfaces that are easy to use, with a good navigation experience, accessible and that truly meet the needs of users.<br /><br /> Our user-centric approach allows us to deeply understand consumer expectations and translate them into high-quality, accessible and efficient visual and interactive interfaces.",
+        "text_3": "We differentiate ourselves by offering customized solutions and ongoing consulting, allowing companies to not only launch products with a high-level design, but also keep the user experience aligned with market expectations."
+    },
+    "offered_services": {
+        "title": "What we do",
+        "curve_path": "End-to-end design. End-to-end design. End-to-end design.",
+        "user_research": "User research",
+        "wireframe": "Website design",
+        "app_design": "App design",
+        "redesign": "Digital product redesign",
+        "consultancy": "Product improvement consultancy"
+    },
+    "mission": {
+        "line_1": "We transform ideas into",
+        "line_2": "impactful solutions",
+        "line_3": "uniting design, technology",
+        "line_4": "and innovation to help",
+        "line_5": "companies reach their",
+        "line_6": "full potential."
+    },
+    "process_services": {
+        "pipeline": "Discovery <span class='separator'></span> Design <span class='separator'></span> Development <span class='separator'></span> Evolution",
+        "discovery": "<span class='w700'>Discovery:</span> We perform an in-depth analysis, create a complete sitemap, and conduct market research to position your product in the best possible way. We develop strategic research to develop incredible experiences. <div class='tools'> <span class='tool'>Research</span> <span class='tool'>Strategic Plan</span> <span class='tool'>UX Research</span> </div>",
+        "design": "<span class='w700'>Design:</span> We build accessible and intuitive products, customizing every detail to meet your company's goals and create an incredible experience for your customer. <div class='tools'> <span class='tool'>Wireframe</span> <span class='tool'>UX Design</span> <span class='tool'>UI Design</span></div>",
+        "development": "<span class='w700'>Development:</span> We offer Front-End development to transform design into functional interfaces, from information architecture to coding of views and user iterations. We perform quality testing and complete documentation to facilitate continuous improvement of the project. <div class='tools'> <span class='tool'>Wordpress</span> <span class='tool'>Vue.js</span> <span class='tool'>Angular</span></div>",
+        "upgrade": "<span class='w700'>Evolution:</span> We offer a package with tasks such as design adjustments, usability review, implementation of improvements based on user feedback, and to ensure that the product remains aligned with user needs and market best practices. <div class='tools'> <span class='tool'>Landing Pages</span> <span class='tool'>Applications</span> <span class='tool'>Institutional Websites and +</span></div>",
+        "quote": "For us, UX is not just about aesthetics, it's about impact. We create solutions that engage, solve problems and add value.",
+        "services": {
+            "title": "Offered services",
+            "contact_button": "talk to us",
+            "items": {
+                "titles": {
+                    "ux_design": "UX Design",
+                    "ui_design": "UI Design",
+                    "development": "Development",
+                    "retainer": "Retainer (Continuous Consulting)"
+                },
+                "tools": {
+                    "user_interview": "User Interview",
+                    "benchmark": "Benchmark",
+                    "ux_strategy": "UX Strategy",
+                    "accessibility": "Accessibility",
+                    "usability": "Usability Testing",
+                    "architecture": "Information Architecture",
+                    "high_low": "Low and High Fidelity Prototyping",
+                    "interactive": "Interactive Prototyping",
+                    "design_system": "Design System",
+                    "software_architecture": "Software Architecture",
+                    "api_integration": "Integration with APIs",
+                    "front_end": "Front-End Development",
+                    "maintenance": "Support and Maintenance",
+                    "continuous_consultancy": "Ongoing Consulting Services: This includes design improvements, usability reviews, implementation of enhancements based on user feedback, and support for new developments."
+                }
+            }
+        }
+    },
+    "team": {
+        "tags": {
+            "abia": "UX Designer {'|'} Speaker {'|'} Mentor"
+        },
+        "presentations": {
+            "abia": "I am passionate about creating solutions that go beyond aesthetics and prioritize accessibility and inclusion. My journey includes mentoring at events such as the Space Apps Challenge and participating in hackathons, where I help teams solve complex problems and transform ideas into impactful experiences. With an empathetic vision and a human-centered approach, I want to be able to develop innovative and inclusive solutions that respect the complexity of each user.✨"
+        },
+        "names": {
+            "abia": "Ábia Bognola, CEO and Founder of UXfinity"
+        }
+    },
+    "footer": {
+        "title": "Enough talk, let's build something together!",
+        "quote": "Let's talk"
+    },
+    "contact": {
+        "title": "Let's get your ideas off paper? Talk to us",
+        "subtitle": "How does it work?",
+        "instructions": {
+            "labels": {
+                "touch": "Get in touch",
+                "return": "Quick response",
+                "proposal": "Proposal",
+                "like_it": "Did you like it?"
+            },
+            "descriptions": {
+                "touch": "We're glad you're interested in our services",
+                "return": "Someone from our team will get in touch to schedule a chat and learn more about the project",
+                "proposal": "Here, we'll show you how our company will work on your idea and offer a proposal for your business.",
+                "like_it": "Here we start transforming your business experience!"
+            }
+        },
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "service_type": "I found you by",
+            "instagram": "Instagram",
+            "indication": "Indication",
+            "google": "Google",
+            "linkedin": "LinkedIn",
+            "other": "Other",
+            "message": "Tell me a little about your project",
+            "message_placeholder": "my project...",
+            "send_button": "send message"
+        }
+    }
+}
