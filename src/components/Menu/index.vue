@@ -17,6 +17,7 @@
 import { ref } from 'vue'
 import MenuItem from '../MenuItem'
 import LanguageSwitcher from '../LanguageSwitcher'
+import { useI18n } from 'vue-i18n'
 
 defineOptions({
     name: 'ui-menu',
@@ -27,27 +28,35 @@ defineOptions({
     },
 })
 
+const { t } = useI18n()
+
 const items = ref([
     {
-        label: 'Início',
+        label: t('nav.home'),
         page: '/#home',
         type: 'link',
         name: 'home',
     },
     {
-        label: 'Sobre mim',
-        page: '/#about',
+        label: t('nav.meet_studio'),
+        page: '/#meet-studio',
         type: 'link',
-        name: 'about',
+        name: 'meet_studio',
     },
     {
-        label: 'Cases',
-        page: '/#cases',
+        label: t('nav.process_services'),
+        page: '/#process-services',
         type: 'link',
-        name: 'cases',
+        name: 'process_services',
     },
     {
-        label: 'Contato',
+        label: t('nav.team'),
+        page: '/#team',
+        type: 'link',
+        name: 'team',
+    },
+    {
+        label: t('nav.contact'),
         page: '/contato',
         type: 'router',
         name: 'contact',

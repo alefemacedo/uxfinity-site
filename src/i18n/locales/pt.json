@@ -5,8 +5,9 @@
     },
     "nav": {
         "home": "Início",
-        "about": "Sobre mim",
-        "cases": "Cases",
+        "meet_studio": "Conheça o studio",
+        "process_services": "Nosso processo",
+        "team": "Nossa equipe",
         "contact": "Contato"
     },
     "home": {

@@ -17,6 +17,7 @@
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n'
 import MenuItem from '../MenuItem'
 
 import { ref } from 'vue'
@@ -30,34 +31,35 @@ defineOptions({
 })
 
 const emit = defineEmits(['toggleNavbar'])
+const { t } = useI18n()
 
 const items = ref([
     {
-        label: 'Início',
+        label: t('nav.home'),
         page: '/#home',
         type: 'link',
         name: 'home',
     },
     {
-        label: 'Conheça o studio',
+        label: t('nav.meet_studio'),
         page: '/#meet-studio',
         type: 'link',
-        name: 'about',
+        name: 'meet_studio',
     },
     {
-        label: 'Nosso processo',
+        label: t('nav.process_services'),
         page: '/#process-services',
         type: 'link',
-        name: 'cases',
+        name: 'process_services',
     },
     {
-        label: 'Nossa equipe',
+        label: t('nav.team'),
         page: '/#team',
         type: 'link',
-        name: 'cases',
+        name: 'team',
     },
     {
-        label: 'Contato',
+        label: t('nav.contact'),
         page: '/contato',
         type: 'router',
         name: 'contact',
